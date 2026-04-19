@@ -232,3 +232,5 @@ if ('serviceWorker' in navigator) {
 }
 
 console.log('Next Level v2.0 - Base digital completa!');
+
+navigator.serviceWorker.register('./sw.js')  // ou '/sw.js'
