@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Next Level - Consultoria de Soluções Digitais para Pequenos Negócios. Site profissional, automação de WhatsApp, estruturação de marketing e processos comerciais.">
+    <meta name="theme-color" content="#6E56FF">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nextlevel.com/">
+    <meta property="og:title" content="Next Level · Soluções Digitais para Pequenos Negócios">
+    <meta property="og:description" content="Estruture sua base digital, automatize o WhatsApp e organize seus processos comerciais.">
+    <meta property="og:image" content="https://nextlevel.com/og-image.jpg">
+    
+    <title>Next Level · Soluções Digitais para Pequenos Negócios</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <canvas id="orbCanvas" aria-hidden="true"></canvas>
+
+    <nav class="navbar" aria-label="Navegação principal">
+        <div class="container nav-container">
+            <div class="logo">NEXT<span>LEVEL</span></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#solucoes">Soluções</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#time">Time</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-outline" id="openModalBtn">Área do time</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <header class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge">🚀 consultoria digital para pequenos negócios</div>
+                    <h1>Estruture sua base digital e <span class="gradient-text">venda melhor</span></h1>
+                    <p>A Next Level ajuda pequenos negócios a se organizarem digitalmente, automatizarem o atendimento e criarem processos comerciais que realmente funcionam.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="scrollToSolucoes">Nossas soluções <i class="fas fa-arrow-right"></i></button>
+                        <button class="btn-outline" id="openAnalyticsPreview">Ver cases <i class="fas fa-chart-line"></i></button>
+                    </div>
+                    <div class="hero-stats">
+                        <div><span>+50</span> pequenos negócios atendidos</div>
+                        <div><span>+30%</span> aumento em vendas</div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card glass-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>Automação de WhatsApp</h4>
+                        <p>atendimento 24/7</p>
+                    </div>
+                    <div class="floating-card glass-card delay-1">
+                        <i class="fas fa-globe"></i>
+                        <h4>Site Profissional</h4>
+                        <p>catálogo digital</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Imagem de computador cobrindo o espaço -->
+        <!-- Imagem de computador cobrindo o espaço -->
+<section class="section">
+    <div class="container">
+        <img src="Home.jpg" 
+             alt="Computador com código e design digital" 
+             style="width: 90%; max-width: 900px; height: auto; display: block; margin: 0 auto; border-radius: 32px;">
+    </div>
+</section>
+        <!-- SOLUÇÕES -->
+        <section id="solucoes" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossas <span class="gradient-text">soluções</span></h2>
+                    <p class="section-sub">Estrutura digital funcional, processos organizados e apoio à venda.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="solution-card glass-card">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Site profissional + Catálogo digital</h3>
+                        <p>Site moderno, responsivo e catálogo de produtos/serviços para seu negócio estar online com credibilidade.</p>
+                        <div class="card-tag">essencial</div>
+                    </div>
+                    <div class="solution-card glass-card">
+                        <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3>Automação de WhatsApp</h3>
+                        <p>Robô de atendimento, respostas automáticas, agendamento e organização do atendimento comercial.</p>
+                        <div class="card-tag">+produtividade</div>
+                    </div>
+                    <div class="solution-card glass-card">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Estruturação de marketing digital</h3>
+                        <p>Estratégia básica, vídeos, divulgação e comunicação clara para atrair clientes.</p>
+                        <div class="card-tag">crescimento</div>
+                    </div>
+                    <div class="solution-card glass-card">
+                        <div class="card-icon"><i class="fas fa-tasks"></i></div>
+                        <h3>Organização de processos comerciais</h3>
+                        <p>Padronização, redução de retrabalho e fluxos de vendas previsíveis.</p>
+                        <div class="card-tag">gestão</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PILARES -->
+        <section id="pilares" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos <span class="gradient-text">3 Pilares</span></h2>
+                    <p class="section-sub">A base da transformação digital do seu pequeno negócio.</p>
+                </div>
+                <div class="pilares-grid">
+                    <div class="pilar-card glass-card">
+                        <div class="pilar-number">01</div>
+                        <i class="fas fa-database"></i>
+                        <h3>Estrutura Digital</h3>
+                        <p>Sites, catálogo digital, WhatsApp e organização de portfólio. Sua casa digital em ordem.</p>
+                    </div>
+                    <div class="pilar-card glass-card">
+                        <div class="pilar-number">02</div>
+                        <i class="fas fa-robot"></i>
+                        <h3>Automação e Gestão</h3>
+                        <p>Robô de WhatsApp, padronização, organização do atendimento e redução de tempo improdutivo.</p>
+                    </div>
+                    <div class="pilar-card glass-card">
+                        <div class="pilar-number">03</div>
+                        <i class="fas fa-megaphone"></i>
+                        <h3>Atração e Comunicação</h3>
+                        <p>Vídeos, estratégia básica de marketing, divulgação e comunicação clara com o cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPOSTA DE VALOR -->
+        <section class="section">
+            <div class="container">
+                <div class="proposta-card glass-card">
+                    <h2><i class="fas fa-gem"></i> Nossa Proposta de Valor</h2>
+                    <div class="proposta-grid">
+                        <div><i class="fas fa-check"></i> Estrutura digital funcional</div>
+                        <div><i class="fas fa-check"></i> Processos organizados</div>
+                        <div><i class="fas fa-check"></i> Comunicação clara</div>
+                        <div><i class="fas fa-check"></i> Redução de retrabalho</div>
+                        <div><i class="fas fa-check"></i> Apoio à venda</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIME -->
+        <section id="time" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quem está por trás da <span class="gradient-text">Next Level</span></h2>
+                    <p class="section-sub">Uma equipe completa para transformar seu negócio.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <div class="team-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Felipe</h3>
+                        <span class="team-role">CEO</span>
+                        <p>Visão estratégica, vendas, parcerias, diagnóstico e decisão final.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h3>Igor</h3>
+                        <span class="team-role">COO</span>
+                        <p>Organização de projetos, cronogramas, qualidade, processos e parte burocrática.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-icon"><i class="fas fa-code"></i></div>
+                        <h3>Kauan</h3>
+                        <span class="team-role">CTO</span>
+                        <p>Programação, infraestrutura, segurança e manutenção técnica.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Yasmin</h3>
+                        <span class="team-role">CMO</span>
+                        <p>Planejamento de marketing, posicionamento, geração de leads e apoio ao comercial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO DE LEAD -->
+        <section class="section">
+            <div class="container">
+                <div class="lead-card glass-card">
+                    <div class="lead-content">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Quer estruturar a base digital do seu negócio?</h3>
+                        <p>Deixe seu e-mail. Nossa equipe entra em contato com um diagnóstico gratuito.</p>
+                        <form id="leadForm">
+                            <input type="email" placeholder="seu@email.com" required id="leadEmail" aria-label="Seu e-mail">
+                            <button type="submit" class="btn-primary">Quero organizar meu negócio →</button>
+                        </form>
+                        <p class="form-note">sem spam, só conteúdo de valor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">NEXT<span>LEVEL</span></div>
+                <p>Consultoria de Soluções Digitais para Pequenos Negócios.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Soluções</h4>
+                <a href="#">Site profissional</a>
+                <a href="#">Automação WhatsApp</a>
+                <a href="#">Marketing digital</a>
+                <a href="#">Processos comerciais</a>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <a href="#">Sobre nós</a>
+                <a href="#">Pilares</a>
+                <a href="#">Time</a>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <a href="#">ola@nextlevel.com</a>
+                <a href="#">+55 11 99999-8888</a>
+                <a href="#">Trabalhe conosco</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Next Level · Soluções Digitais para Pequenos Negócios · 2026</p>
+        </div>
+    </footer>
+
+    <div id="teamModal" class="modal" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content glass-card">
+            <button class="close-modal" aria-label="Fechar">&times;</button>
+            <i class="fas fa-users" style="font-size: 2.5rem; color: #A281FF;"></i>
+            <h2 id="modalTitle">Time Next Level</h2>
+            <p>Felipe (CEO), Igor (COO), Kauan (CTO), Yasmin (CMO). Juntos para transformar pequenos negócios.</p>
+            <div class="modal-metrics">
+                <div>🚀 +50 negócios atendidos</div>
+                <div>🎯 Metodologia própria</div>
+                <div>📱 Suporte contínuo</div>
+            </div>
+            <button class="btn-primary" id="closeModalBtn">Vamos crescer juntos</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

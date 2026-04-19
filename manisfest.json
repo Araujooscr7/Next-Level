@@ -1,0 +1,21 @@
+{
+  "name": "Next Level",
+  "short_name": "NextLevel",
+  "description": "Gestão digital para comunidades",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03050B",
+  "theme_color": "#6E56FF",
+  "icons": [
+    {
+      "src": "https://placehold.co/192x192/6E56FF/white?text=NL",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placehold.co/512x512/6E56FF/white?text=NL",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
