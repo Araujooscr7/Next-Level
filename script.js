@@ -82,17 +82,49 @@ if (leadForm) {
     });
 }
 
-const modal = document.getElementById('teamModal');
-const openBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const closeSpan = document.querySelector('.close-modal');
-function openModal() { if(modal) modal.style.display = 'flex'; }
-function closeModalFunc() { if(modal) modal.style.display = 'none'; }
-if (openBtn) openBtn.addEventListener('click', openModal);
-if (closeModalBtn) closeModalBtn.addEventListener('click', closeModalFunc);
-if (closeSpan) closeSpan.addEventListener('click', closeModalFunc);
-window.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
+// ========== LOGIN DOS FOUNDERS (redireciona para página específica) ==========
+const credentialsPages = {
+    felipe: { senha: "1", page: "felipe.html" },
+    igor:   { senha: "2", page: "igor.html" },
+    kauan:  { senha: "3", page: "kauan.html" },
+    yasmin: { senha: "4", page: "yasmin.html" }
+};
 
+const modalTime = document.getElementById('teamModal');
+const loginForm = document.getElementById('loginForm');
+const loginView = document.getElementById('loginView');
+
+function handleLogin(e) {
+    e.preventDefault();
+    const user = document.getElementById('loginUser').value.trim().toLowerCase();
+    const pass = document.getElementById('loginPass').value;
+    if (credentialsPages[user] && credentialsPages[user].senha === pass) {
+        showToast(`Redirecionando para área de ${user}...`, 1500);
+        setTimeout(() => {
+            window.location.href = credentialsPages[user].page;
+        }, 1000);
+    } else {
+        showToast('Usuário ou senha inválidos', 3000);
+    }
+}
+
+function resetModalAndClose() {
+    modalTime.style.display = 'none';
+    if (loginForm) loginForm.reset();
+}
+
+function openModalTime() {
+    modalTime.style.display = 'flex';
+}
+
+if (loginForm) loginForm.addEventListener('submit', handleLogin);
+const openModalBtnTime = document.getElementById('openModalBtn');
+if (openModalBtnTime) openModalBtnTime.addEventListener('click', openModalTime);
+const closeModalTime = document.querySelector('#teamModal .close-modal');
+if (closeModalTime) closeModalTime.addEventListener('click', resetModalAndClose);
+window.addEventListener('click', (e) => { if (e.target === modalTime) resetModalAndClose(); });
+
+// ========== MODAL ANALYTICS ==========
 const analyticsModal = document.getElementById('analyticsModal');
 const openAnalyticsBtn = document.getElementById('openAnalyticsPreview');
 const closeAnalyticsSpan = document.querySelector('.close-analytics-modal');
@@ -144,4 +176,4 @@ document.querySelectorAll('.solution-card, .pilar-card, .team-card, .lead-card')
     observer.observe(el);
 });
 
-console.log('Next Level site pronto - sem Service Worker');
+console.log('Next Level site pronto com área do time protegida');
