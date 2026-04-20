@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Igor · COO Next Level</title><link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="orbCanvas"></canvas>
+<nav class="navbar"><div class="container nav-container"><div class="logo">NEXT<span>LEVEL</span></div><div class="nav-links"><a href="index.html">Home</a><a href="#" id="logoutLink">Sair</a></div></div></nav>
+<main class="container founder-dashboard">
+<div class="dashboard-header"><h1>Olá, <span class="gradient-text">Igor</span> 📋</h1><p>Painel do COO – operações, qualidade e cronogramas</p></div>
+<div class="kpi-grid"><div class="kpi-card"><i class="fas fa-check-circle fa-2x"></i><div class="kpi-number">23</div><div>processos otimizados</div></div><div class="kpi-card"><i class="fas fa-clock fa-2x"></i><div class="kpi-number">98%</div><div>cumprimento de prazos</div></div><div class="kpi-card"><i class="fas fa-clipboard-list fa-2x"></i><div class="kpi-number">12</div><div>projetos ativos</div></div></div>
+<div class="section-card"><h3><i class="fas fa-tasks"></i> Entregas da semana</h3><ul><li>✅ Site do cliente ABC – finalizado</li><li>🔄 Automação de WhatsApp – em testes</li><li>📅 Relatório de qualidade – sexta</li></ul><textarea rows="2" placeholder="Anotações operacionais..."></textarea><button class="btn-primary btn-sm" onclick="salvarNota(this)">Salvar nota</button></div>
+<div class="section-card"><h3><i class="fas fa-chart-line"></i> Indicadores de processo</h3><ul><li>Tempo médio de entrega: 4,2 dias</li><li>Satisfação do cliente (NPS): 82</li><li>Retrabalho: 5% dos projetos</li></ul></div>
+</main>
+<footer style="text-align:center; padding:2rem;"><p>Next Level · Área do COO</p></footer>
+<script>function salvarNota(btn){alert("Nota salva: "+btn.previousElementSibling.value.substring(0,50));} document.getElementById('logoutLink')?.addEventListener('click',(e)=>{e.preventDefault();window.location.href='index.html';});</script><script src="script.js"></script>
+</body>
+</html>
