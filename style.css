@@ -224,10 +224,12 @@ body {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 60px;
+    /* IMAGEM PRINCIPAL */
     background-image: url("./hero-mockup.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #040406; /* Fallback */
 }
 
 /* Overlay leve para garantir leitura do texto */
@@ -833,10 +835,12 @@ body {
         min-height: 100vh;
         padding-top: 80px;
         padding-bottom: 60px;
-        background-image: url("./hero-mockup.jpg");
-        background-size: cover;
-        background-position: center bottom;
-        background-repeat: no-repeat;
+        /* FORÇA A IMAGEM NO CELULAR */
+        background-image: url("./hero-mockup.jpeg") !important;
+        background-size: cover !important;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+        background-color: #040406 !important;
     }
     
     .hero-content {
@@ -955,7 +959,12 @@ body {
         min-height: 100vh;
         padding-top: 60px;
         padding-bottom: 40px;
-        background-position: center bottom;
+        /* FORÇA A IMAGEM NO CELULAR PEQUENO */
+        background-image: url("./hero-mockup.jpg") !important;
+        background-size: cover !important;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+        background-color: #040406 !important;
     }
     
     .hero-title {
