@@ -224,21 +224,18 @@ body {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 60px;
-    background-image: url("./nl2.jpeg");
+    /* IMAGEM DO MOCKUP 3D */
+    background-image: url("./hero-mockup.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.hero-overlay {
-    display: none;
-}
-
-.hero-vignette {
+/* Overlay leve para garantir leitura do texto */
+.hero-overlay-light {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, transparent 40%, rgba(4, 4, 6, 0.15) 100%);
-    pointer-events: none;
+    background: rgba(4, 4, 6, 0.3);
     z-index: 0;
 }
 
@@ -334,7 +331,6 @@ body {
     overflow: hidden;
 }
 
-/* AUMENTEI A ILUMINAÇÃO AZUL */
 .section-destaque::before {
     content: '';
     position: absolute;
@@ -348,7 +344,6 @@ body {
     pointer-events: none;
 }
 
-/* ADICIONEI UMA SEGUNDA FONTE DE LUZ AZUL */
 .section-destaque::after {
     content: '';
     position: absolute;
@@ -376,7 +371,6 @@ body {
     position: relative;
 }
 
-/* EFEITO DE GLOW NO TÍTULO */
 .destaque-title::before {
     content: '';
     position: absolute;
@@ -400,7 +394,6 @@ body {
     position: relative;
 }
 
-/* LUZ AZUL POR TRÁS DOS CARDS */
 .destaque-mockups::before {
     content: '';
     position: absolute;
@@ -517,7 +510,6 @@ body {
     margin: 0;
 }
 
-/* IMAGENS NOS 3 CARDS */
 .mockup-image-wrapper {
     width: 100%;
     height: 100%;
@@ -539,7 +531,6 @@ body {
     transform: scale(1.08);
 }
 
-/* Efeito de gradiente sobre a imagem para melhor leitura do texto */
 .mockup-body::after {
     content: '';
     position: absolute;
@@ -838,13 +829,29 @@ body {
         display: flex;
     }
     
-    .hero-title {
-        font-size: 2.8rem;
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
     }
     
-    .hero-section {
-        padding-top: 80px;
-        min-height: 90vh;
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
     }
     
     .destaque-title {
@@ -913,22 +920,18 @@ body {
         height: 22px;
     }
     
+    .hero-section {
+        min-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .hero-buttons a {
-        width: 100%;
-        text-align: center;
+        font-size: 0.95rem;
     }
     
     .destaque-title {
