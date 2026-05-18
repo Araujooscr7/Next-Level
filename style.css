@@ -960,7 +960,7 @@ body {
         padding-top: 60px;
         padding-bottom: 40px;
         /* FORÇA A IMAGEM NO CELULAR PEQUENO */
-        background-image: url("./hero-mockup.jpg") !important;
+        background-image: url("./hero-mockup.jpeg") !important;
         background-size: cover !important;
         background-position: center bottom !important;
         background-repeat: no-repeat !important;
