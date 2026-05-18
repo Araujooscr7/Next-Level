@@ -224,8 +224,7 @@ body {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 60px;
-    /* IMAGEM DO MOCKUP 3D */
-    background-image: url("./hero-mockup.jpeg");
+    background-image: url("./hero-mockup.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -829,30 +828,62 @@ body {
         display: flex;
     }
     
+    /* ----- CORREÇÃO DO HERO NO CELULAR ----- */
     .hero-section {
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        background-image: url("./hero-mockup.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 16px;
+        align-items: flex-start;
         min-height: 100vh;
     }
     
+    .hero-text {
+        align-items: center;
+        gap: 16px;
+        padding-top: 20px;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        max-width: 100%;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
     }
     
     .hero-buttons {
         flex-direction: column;
         width: 100%;
         gap: 12px;
+        margin-top: 8px;
     }
     
     .hero-buttons a {
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
+    
+    .hero-badge {
+        margin-bottom: 4px;
+    }
+    /* -------------------------------------- */
     
     .destaque-title {
         font-size: 2.5rem;
@@ -924,14 +955,15 @@ body {
         min-height: 100vh;
         padding-top: 60px;
         padding-bottom: 40px;
+        background-position: center bottom;
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .hero-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     
     .destaque-title {
